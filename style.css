@@ -1,0 +1,16 @@
+body {
+    background-color: #cccbc6;
+}
+h2{
+    margin: auto;
+    text-align: center;
+    font-size: 42px;
+    color:#f4f4f4;
+    font-family: 'Maven Pro', sans-serif;
+}
+.container {
+    margin: auto;
+    display: block;
+    padding-top: 40px;
+    width: 100%;
+}
