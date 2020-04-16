@@ -1,0 +1,60 @@
+body{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+main.container-all {
+    grid-column-start: 2;
+}
+
+.exclude {
+    display: none;
+    visibility: hidden;
+}
+
+.interval{
+    display: flex;
+}
+
+#countdown-timer{
+    display: flex;
+    flex-direction: row;
+}
+
+.invisible{
+    display: none;
+    visibility: hidden;
+}
+
+.visible {
+    display: flex;
+}
+
+.pause{
+    background-color: lightpink;
+}
+
+.resume {
+    background-color: lightskyblue
+}
+
+.stop {
+    background-color: crimson;
+}
+
+#reset-timer {
+    color: blue;
+}
+
+#reset-timer:hover{
+    color:purple;
+    cursor: crosshair;
+}
+
+[draggable] {
+    user-select: none;
+}
+
+#controls{
+    padding: 5px;
+}

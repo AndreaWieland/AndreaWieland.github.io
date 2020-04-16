@@ -1,0 +1,41 @@
+user stories
+-user should go to the website and see timer option input
+-user enters number of intervals, the time of the intervals, and can click go from there
+-user has the option to add a break, which will reveal input for time of break
+-there is a plus button where user can add another timer option input module, which has the same count, time, and break options
+-user can add up to 10 modules (arbitrary. see if that feels like the right number when sober)
+-user can move finished modules up and down in the sequence
+-once user clicks "go", the timer will start
+    -at the end of each primary session, an alarm will sound. a different alarm at the end of each break
+    -breaks occur after each primary session except the last, unless there is a new module after it.
+        -for example:
+            -user selects 4 ints, 25 minute primary 5 minute break:
+                -prime, break, prime, break, prime, break, prime. end. (4p 3b)
+            -user selects above, + 3 int, 10 minute primary, no break
+                -prime1, break1, prime1, break1, prime1, break1, prime1, break1, prime2, prime2, prime2. end. (4p 4b of first module)
+-clock will visibly tick down on screen
+
+To-do:
+-make inputs re-orderable through drag and drop
+-implement caching so that user does not need to reenter timers when they come back
+-find and add alarm tones: interval over, break over, 3-second countdown, all intervals complete.
+-remove timer and display rounds data and congratulations message
+-make responsive
+-make pretty with css (maybe fun animation as time ticks down)
+-modal pretty https://www.w3schools.com/howto/howto_css_modals.asp
+-end interval early option (terminates countdown and advances to next round)
+
+Completed:
+-create initial empty DOM, with containers for input and timer display
+-create JS functions to insert input fields into DOM
+-add + button to add more interval inputs
+-add - button to remove its parent interval input
+-add input validation/guardrails
+-pull data from input fields
+-hide input fields once timer is started
+-reveal timer holder when timer is started
+-create pause button stop timer and keep state 
+-create stop button to stop timer, delete state, make inputs visible again
+-add popup/timer block if user has entered no intervals
+-reset button to clear all fields and remove all but first interval
+

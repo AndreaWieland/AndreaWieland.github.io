@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="scripts.js"></script>
+    <title>The Flexible Interval Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container-all">
+    <h1>The Flexible Interval Timer</h1>
+    <h4>Add, remove, or rearrange intervals with ease</h4>
+    <div id="inputContainer" class="visible">
+        <div id="controls">
+            <button id="addInterval">+</button>
+            <button id="go">Start</button>
+            <p id="reset-timer">Reset</p>
+        </div>
+        <div id="valueInputs">  
+        </div> 
+    </div>
+    <div id="timer-container" class="invisible">
+        <div id="countdown-timer">
+        </div>
+        <div class="controls">
+            <button id="pause" class="pause visible">Pause</button>
+            <button id="resume" class="resume invisible">Resume</button>
+            <button id="stop" class="stop">Stop</button>
+        </div>
+    </div>  
+    </main>
+    <audio id="alarm">
+        <source src="bell.mp3" type="audio/mpeg">
+    </audio>
+</body>
+
+</html>
